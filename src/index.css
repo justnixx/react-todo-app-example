@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --app-max-w: 280px;
+}
+
+body {
+  background-color: #f1f1f1;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 100%;
+  max-width: var(--app-max-w);
+  margin: auto;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+}
+
+input {
+  width: 100%;
+  padding: 1rem 2rem;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.todo {
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+
+.todo_title {
+  width: 100%;
+  max-width: 160px;
+}
